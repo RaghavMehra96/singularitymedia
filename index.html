@@ -5,108 +5,131 @@
 <link rel="icon" type="image/png" href="data:image/png;base64,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">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,300..500&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
-/* Layout: one screen. Wordmark centred over a starfield, email beneath, black-hole horizon rising from the bottom edge. */
+/* Layout: a slow vertical scroll through deep space. Wordmark first, then the complete black hole, then contact, then the credit line. */
 :root{
   --space:#0A0A0A;
   --hairline:#262626;
   --starlight:#F5F5F3;
   --starlight-muted:#8F8F8F;
+  --font-wide:"Archivo","Helvetica Neue",Arial,sans-serif;
   --font-mono:"IBM Plex Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
   --ease:cubic-bezier(0.22,1,0.36,1);
   color-scheme:dark;
 }
 *{box-sizing:border-box}
-html,body{height:100%}
-.page{min-height:100%;display:flex;flex-direction:column}
-body{margin:0;background:var(--space);color:var(--starlight);-webkit-font-smoothing:antialiased;overflow-x:hidden}
-main{position:relative;flex:1;min-height:560px;display:grid;place-items:center;overflow:hidden;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:96px 220px}
-#stars{position:absolute;inset:0;width:100%;height:100%;display:block}
-.horizon{position:absolute;left:50%;bottom:0;width:min(1400px,220vw);aspect-ratio:2/1;transform:translate(-50%,40%);pointer-events:none}
-.horizon svg{width:100%;height:100%;overflow:visible}
-.horizon .glow{fill:none;stroke:var(--starlight);stroke-width:40;opacity:.06;filter:url(#soft)}
-.horizon .void{fill:var(--space)}
-.horizon .halo{fill:none;stroke:var(--starlight);stroke-width:1.2;opacity:.28;stroke-dasharray:1260;animation:draw 2200ms var(--ease) 300ms both}
-.horizon .photon{fill:none;stroke:var(--starlight);stroke-width:.6;opacity:.14}
-.horizon .disc{fill:var(--starlight);opacity:.5;transform-origin:700px 350px;animation:sweep 1800ms var(--ease) 800ms both}
-.horizon .disc-glow{fill:var(--starlight);opacity:.10;filter:url(#soft);transform-origin:700px 350px;animation:sweep 1800ms var(--ease) 800ms both}
-.content{position:relative;display:grid;justify-items:center;gap:clamp(48px,7vw,88px);text-align:center;width:100%}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--space);color:var(--starlight);font-family:var(--font-wide);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+#stars{position:fixed;inset:0;width:100%;height:100%;display:block;z-index:0;pointer-events:none}
+.wrap{position:relative;z-index:1;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+
+/* 1. wordmark */
+.hero{min-height:100svh;display:grid;place-items:center;padding-block:96px}
 .wordmark{width:min(720px,100%);height:auto;display:block;animation:rise 1400ms var(--ease) both}
-.mail{font-family:var(--font-mono);font-size:14px;letter-spacing:.06em;color:var(--starlight);text-decoration:none;border-bottom:1px solid var(--hairline);padding-bottom:4px;overflow-wrap:anywhere;transition:border-color 180ms var(--ease)}
-.mail:hover{border-color:var(--starlight-muted)}
-.copy{font-family:var(--font-mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--starlight-muted);background:none;border:0;padding:6px 8px;cursor:pointer;transition:color 180ms var(--ease)}
-.copy:hover{color:var(--starlight)}
-footer{position:relative;border-top:1px solid var(--hairline);background:var(--space)}
-.foot{max-width:1240px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px 40px;padding-block:28px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
-@media (min-width:720px){.foot{padding-left:max(40px,env(safe-area-inset-left,0px));padding-right:max(40px,env(safe-area-inset-right,0px))}}
-.small{font-family:var(--font-mono);font-size:12px;line-height:18px;letter-spacing:.06em;color:var(--starlight-muted)}
-.label{font-family:var(--font-mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--starlight-muted)}
-.reach{display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px}
-:focus-visible{outline:2px solid var(--starlight);outline-offset:3px}
+.cue{position:absolute;left:50%;bottom:32px;transform:translateX(-50%);display:grid;justify-items:center;gap:10px;color:var(--starlight-muted);text-decoration:none;font-family:var(--font-mono);font-size:10px;letter-spacing:.3em;text-transform:uppercase;animation:rise 1400ms var(--ease) 900ms both}
+.cue span{display:block;width:1px;height:40px;background:linear-gradient(var(--starlight-muted),transparent);animation:drift 2.4s ease-in-out infinite}
+@keyframes drift{0%,100%{transform:scaleY(.4);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}}
+
+/* 2. the black hole, complete */
+.hole{min-height:100svh;display:grid;place-items:center;padding-block:64px}
+.hole{overflow:hidden}
+.hole svg{width:min(1100px,100%);height:auto;overflow:visible;display:block}
+@media (max-width:700px){.hole{place-items:center start;padding-left:0;padding-right:0}.hole svg{width:200vw;max-width:none;margin-left:calc(50% - 100vw)}}
+.glow{fill:none;stroke:var(--starlight);stroke-width:40;opacity:.06;filter:url(#soft)}
+.void{fill:var(--space)}
+.halo{fill:none;stroke:var(--starlight);stroke-width:1.4;opacity:.32;stroke-dasharray:1260;stroke-dashoffset:0}
+.photon{fill:none;stroke:var(--starlight);stroke-width:.6;opacity:.14}
+.disc{fill:var(--starlight);opacity:.55;transform-origin:550px 300px}
+.disc-glow{fill:var(--starlight);opacity:.10;filter:url(#soft);transform-origin:550px 300px}
+.hole.play .halo{animation:draw 2200ms var(--ease) 100ms both}
+.hole.play .disc,.hole.play .disc-glow{animation:sweep 1800ms var(--ease) 700ms both}
 @keyframes draw{from{stroke-dashoffset:1260}to{stroke-dashoffset:0}}
 @keyframes sweep{from{transform:scaleX(.02)}to{transform:scaleX(1)}}
+
+/* 3. contact */
+.contact{min-height:70svh;display:grid;place-items:center;text-align:center;padding-block:96px}
+.contact p{margin:0;max-width:38ch;font-size:clamp(17px,2vw,21px);line-height:1.6;font-weight:300;color:var(--starlight-muted);text-wrap:balance}
+.contact a.mail{color:var(--starlight);text-decoration:none;border-bottom:1px solid var(--starlight-muted);padding-bottom:2px;overflow-wrap:anywhere;transition:border-color 180ms var(--ease)}
+.contact a.mail:hover{border-color:var(--starlight)}
+.socials{display:flex;justify-content:center;gap:28px;margin-top:48px}
+.socials a{display:grid;place-items:center;width:52px;height:52px;border:1px solid var(--hairline);border-radius:999px;color:var(--starlight);transition:border-color 180ms var(--ease),transform 180ms var(--ease)}
+.socials a:hover{border-color:var(--starlight-muted);transform:translateY(-2px)}
+.socials svg{width:22px;height:22px}
+
+/* 4. credit */
+footer{position:relative;z-index:1;border-top:1px solid var(--hairline);background:var(--space)}
+footer .wrap{display:flex;justify-content:center;text-align:center;padding-block:28px}
+.small{font-family:var(--font-mono);font-size:12px;line-height:18px;letter-spacing:.06em;color:var(--starlight-muted)}
+
+:focus-visible{outline:2px solid var(--starlight);outline-offset:3px}
 @keyframes rise{from{opacity:.001;transform:translateY(10px)}to{opacity:1;transform:none}}
-@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+.cue{animation-name:rise-c}
+@keyframes rise-c{from{opacity:.001}to{opacity:1}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
 </style></head><body>
 
-<div class="page">
+<canvas id="stars" aria-hidden="true"></canvas>
+
 <main>
-  <canvas id="stars" aria-hidden="true"></canvas>
-  <div class="horizon" aria-hidden="true">
-    <svg viewBox="0 0 1400 700">
-      <defs><filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="14"/></filter></defs>
-      <circle class="glow" cx="700" cy="350" r="200"/>
-      <circle class="void" cx="700" cy="350" r="199"/>
-      <circle class="halo" cx="700" cy="350" r="200"/>
-      <circle class="photon" cx="700" cy="350" r="150"/>
-      <path class="disc-glow" d="M0 350 Q700 330 1400 350 Q700 370 0 350 Z"/>
-      <path class="disc" d="M60 350 Q700 343 1340 350 Q700 357 60 350 Z"/>
-    </svg>
-  </div>
-  <div class="content">
+  <section class="hero wrap">
     <h1 style="margin:0;width:100%;display:grid;justify-items:center">
       <svg class="wordmark" viewBox="0 0 637 96" role="img" aria-label="Singularity Media"><path d="M27.52 46.768Q22.976 46.768 18.816 46.224000000000004Q14.656 45.68 11.424 44.272Q8.192 42.864 6.336 40.239999999999995Q4.48 37.616 4.48 33.519999999999996Q4.48 33.135999999999996 4.48 32.816Q4.48 32.496 4.5440000000000005 32.368H10.176Q10.112 32.688 10.08 33.136Q10.048 33.584 10.048 34.288Q10.048 36.784 12.128 38.512Q14.208 40.24 18.112000000000002 41.104Q22.016000000000002 41.968 27.392 41.968Q29.952 41.968 32.384 41.712Q34.816 41.456 36.928 40.912000000000006Q39.04 40.368 40.608000000000004 39.472Q42.176 38.576 43.104 37.263999999999996Q44.032000000000004 35.952 44.032000000000004 34.224000000000004Q44.032000000000004 31.856 42.432 30.384Q40.832 28.912 38.112 28.016Q35.392 27.12 31.968000000000004 26.544Q28.544 25.968 24.96 25.424Q21.376 24.88 17.984 24.048000000000002Q14.592 23.216 11.872 21.904Q9.152000000000001 20.592 7.5520000000000005 18.448Q5.952 16.304 5.952 13.04Q5.952 10.607999999999997 7.104 8.495999999999999Q8.256 6.384 10.815999999999999 4.751999999999999Q13.376 3.1199999999999974 17.504 2.2239999999999966Q21.632 1.3279999999999959 27.52 1.3279999999999959Q33.536 1.3279999999999959 37.504000000000005 2.3519999999999968Q41.472 3.3759999999999977 43.775999999999996 5.103999999999999Q46.08 6.832000000000001 47.007999999999996 8.911999999999999Q47.936 10.991999999999997 47.936 13.04V14.32H42.368V12.975999999999999Q42.368 11.183999999999997 40.736000000000004 9.616Q39.104 8.048000000000002 35.903999999999996 7.088000000000001Q32.704 6.128 28.032 6.128Q22.656 6.128 19.04 6.896000000000001Q15.424 7.6640000000000015 13.6 9.168Q11.776 10.671999999999997 11.776 12.847999999999999Q11.776 14.896 13.344000000000001 16.208Q14.912 17.52 17.664 18.32Q20.416 19.12 23.808 19.695999999999998Q27.2 20.272 30.784 20.848Q34.368 21.424 37.760000000000005 22.256Q41.152 23.088 43.903999999999996 24.464Q46.656 25.84 48.224000000000004 28.048000000000002Q49.792 30.256 49.792 33.456Q49.792 38.384 46.976 41.328Q44.160000000000004 44.272 39.136 45.519999999999996Q34.112 46.768 27.52 46.768Z M71.55199999999999 46.0V2.0959999999999965H77.184V46.0Z M101.88799999999999 46.0V2.0959999999999965H107.52L136.704 32.24Q137.408 32.944 138.272 33.903999999999996Q139.136 34.864 140.0 35.76Q140.86399999999998 36.656 141.504 37.36H141.952Q141.952 36.272 141.92 34.512Q141.88799999999998 32.751999999999995 141.88799999999998 31.344V2.0959999999999965H147.392V46.0H142.208L112.768 15.535999999999998Q111.42399999999999 14.128 110.01599999999999 12.559999999999999Q108.60799999999999 10.991999999999997 107.776 10.095999999999997H107.32799999999999Q107.32799999999999 11.311999999999998 107.35999999999999 13.296Q107.392 15.280000000000001 107.392 17.008V46.0Z M196.736 46.768Q183.42399999999998 46.768 176.79999999999998 41.104Q170.176 35.44 170.176 24.048Q170.176 16.624 173.50399999999996 11.536Q176.83199999999997 6.448 183.03999999999996 3.887999999999998Q189.248 1.3279999999999959 197.82399999999998 1.3279999999999959Q203.77599999999998 1.3279999999999959 208.47999999999996 2.2559999999999967Q213.18399999999997 3.1839999999999975 216.47999999999996 5.135999999999999Q219.77599999999998 7.088000000000001 221.50399999999996 10.096Q223.23199999999997 13.104 223.23199999999997 17.264H217.72799999999998Q217.72799999999998 13.808 216.09599999999998 11.631999999999998Q214.46399999999997 9.455999999999996 211.64799999999997 8.271999999999998Q208.832 7.088000000000001 205.31199999999998 6.6080000000000005Q201.79199999999997 6.128 198.01599999999996 6.128Q193.59999999999997 6.128 189.63199999999998 7.024000000000001Q185.664 7.920000000000002 182.56 9.904Q179.456 11.887999999999998 177.72799999999998 15.184Q175.99999999999997 18.48 175.99999999999997 23.152V24.688Q175.99999999999997 31.024 178.65599999999998 34.8Q181.31199999999998 38.576 185.952 40.239999999999995Q190.59199999999998 41.903999999999996 196.60799999999998 41.903999999999996Q204.47999999999996 41.903999999999996 209.08799999999997 40.239999999999995Q213.69599999999997 38.576 215.712 35.536Q217.72799999999998 32.496 217.72799999999998 28.464V27.44H196.92799999999997V22.704H223.296V46.0H219.2L218.49599999999998 39.216Q216.25599999999997 42.032 212.79999999999998 43.696Q209.344 45.36 205.21599999999998 46.064Q201.08799999999997 46.768 196.736 46.768Z M269.376 46.768Q261.632 46.768 256.608 44.368Q251.58399999999997 41.968 249.152 37.488Q246.72 33.007999999999996 246.72 26.864V2.0959999999999965H252.416V27.056Q252.416 34.224000000000004 256.79999999999995 38.064Q261.18399999999997 41.903999999999996 269.376 41.903999999999996Q277.568 41.903999999999996 281.984 38.064Q286.4 34.224000000000004 286.4 27.056V2.0959999999999965H292.032V26.864Q292.032 33.007999999999996 289.6 37.488Q287.168 41.968 282.144 44.368Q277.12 46.768 269.376 46.768Z M316.096 46.0V2.0959999999999965H321.72799999999995V41.008H349.18399999999997V46.0Z M364.096 46.0 386.56 2.0959999999999965H393.28L415.74399999999997 46.0H409.536L403.776 34.736000000000004H375.74399999999997L369.984 46.0ZM378.11199999999997 30.0H401.408L394.304 15.919999999999998Q393.856 15.152000000000001 393.28 13.936Q392.704 12.719999999999999 392.096 11.407999999999998Q391.488 10.095999999999997 390.94399999999996 8.943999999999999Q390.4 7.792000000000002 390.016 7.088000000000001H389.504Q388.864 8.496000000000002 388.0 10.256Q387.13599999999997 12.015999999999998 386.4 13.552Q385.664 15.088000000000001 385.216 15.919999999999998Z M435.456 46.0V2.0959999999999965H467.584Q471.872 2.0959999999999965 474.784 3.791999999999998Q477.69599999999997 5.4879999999999995 479.2 8.399999999999999Q480.704 11.311999999999998 480.704 15.024000000000001Q480.704 19.248 478.528 22.544Q476.352 25.84 472.256 27.184L481.856 46.0H475.456L466.432 28.144H441.08799999999997V46.0ZM441.08799999999997 23.344H466.496Q470.464 23.344 472.70399999999995 21.008000000000003Q474.94399999999996 18.672 474.94399999999996 15.088000000000001Q474.94399999999996 12.591999999999999 473.952 10.768Q472.96 8.944000000000003 471.072 7.920000000000002Q469.18399999999997 6.896000000000001 466.496 6.896000000000001H441.08799999999997Z M502.91200000000003 46.0V2.0959999999999965H508.544V46.0Z M547.904 46.0V7.088000000000001H527.872V2.0959999999999965H573.568V7.088000000000001H553.536V46.0Z M608.64 46.0V27.695999999999998L586.688 2.0959999999999965H593.664L611.264 22.896H612.032L629.76 2.0959999999999965H636.352L614.2719999999999 27.695999999999998V46.0Z" fill="#F5F5F3"/><path d="M277.19 89.988 277.244 86.208H277.1L274.58 92.67L272.06 86.208H271.916L271.97 89.988V96.0H270.188V83.436H272.654L274.58 88.422H274.706L276.65000000000003 83.436H278.972V96.0H277.19Z M292.688 96.0V83.436H300.554V85.128H294.704V88.782H300.33799999999997V90.474H294.704V94.308H300.554V96.0Z M314.57599999999996 83.436H318.32Q320.73199999999997 83.436 321.893 85.03800000000001Q323.054 86.64 323.054 89.718Q323.054 92.796 321.893 94.398Q320.73199999999997 96.0 318.32 96.0H314.57599999999996ZM318.19399999999996 94.344Q319.58 94.344 320.255 93.417Q320.92999999999995 92.49 320.92999999999995 90.762V88.674Q320.92999999999995 86.946 320.255 86.019Q319.58 85.092 318.19399999999996 85.092H316.57399999999996V94.344Z M336.49999999999994 96.0V94.47H339.45199999999994V84.96600000000001H336.49999999999994V83.436H344.41999999999996V84.96600000000001H341.46799999999996V94.47H344.41999999999996V96.0Z M365.3359999999999 96.0 364.38199999999995 92.652H360.3859999999999L359.4319999999999 96.0H357.37999999999994L361.0519999999999 83.436H363.8059999999999L367.47799999999995 96.0ZM362.4559999999999 85.47H362.3119999999999L360.7639999999999 90.978H364.0039999999999Z" fill="#8F8F8F"/></svg>
     </h1>
-  </div>
+    <a class="cue" href="#horizon" aria-label="Scroll down">Scroll<span></span></a>
+  </section>
+
+  <section class="hole wrap" id="horizon" aria-hidden="true">
+    <svg viewBox="0 0 1100 600">
+      <defs><filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="14"/></filter></defs>
+      <circle class="glow" cx="550" cy="300" r="200"/>
+      <circle class="void" cx="550" cy="300" r="199"/>
+      <circle class="halo" cx="550" cy="300" r="200"/>
+      <circle class="photon" cx="550" cy="300" r="150"/>
+      <path class="disc-glow" d="M0 300 Q550 282 1100 300 Q550 318 0 300 Z"/>
+      <path class="disc" d="M40 300 Q550 294 1060 300 Q550 306 40 300 Z"/>
+    </svg>
+  </section>
+
+  <section class="contact wrap" id="contact">
+    <div>
+      <p>If you’d like to discuss a potential project or collaboration, please email <a class="mail" href="mailto:raghav@singularitymedia.in">raghav@singularitymedia.in</a></p>
+      <div class="socials">
+        <a href="https://www.instagram.com/singularitymedia.in/" target="_blank" rel="noopener" aria-label="Singularity Media on Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r=".6" fill="currentColor" stroke="none"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
 </main>
 
 <footer>
-  <div class="foot">
-    <span class="small">© 2026 Singularity Media. All rights reserved.</span>
-    <div class="reach">
-      <span class="label">Contact</span>
-      <a class="mail" id="mail" href="mailto:raghav@singularitymedia.in">raghav@singularitymedia.in</a>
-      <button class="copy" type="button" id="copy">Copy</button>
-    </div>
-  </div>
+  <div class="wrap"><span class="small">© 2026 Singularity Media. All rights reserved.</span></div>
 </footer>
-</div>
 
 <script>
 (function(){
   var c=document.getElementById('stars'),ctx=c.getContext('2d'),stars=[],still=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   function seed(){
-    var r=c.getBoundingClientRect(),d=Math.min(window.devicePixelRatio||1,2);
-    c.width=Math.round(r.width*d);c.height=Math.round(r.height*d);ctx.setTransform(d,0,0,d,0,0);
-    var n=Math.round(r.width*r.height/2600);stars=[];
-    for(var i=0;i<n;i++)stars.push({x:Math.random()*r.width,y:Math.random()*r.height,r:Math.random()<.92?Math.random()*.8+.3:Math.random()*.6+1.1,a:Math.random()*.55+.15,p:Math.random()*6.28,s:Math.random()*.6+.2});
+    var w=window.innerWidth,h=window.innerHeight,d=Math.min(window.devicePixelRatio||1,2);
+    c.width=Math.round(w*d);c.height=Math.round(h*d);ctx.setTransform(d,0,0,d,0,0);
+    var n=Math.round(w*h/2600);stars=[];
+    for(var i=0;i<n;i++)stars.push({x:Math.random()*w,y:Math.random()*h,r:Math.random()<.92?Math.random()*.8+.3:Math.random()*.6+1.1,a:Math.random()*.55+.15,p:Math.random()*6.28,s:Math.random()*.6+.2});
     draw(0);
   }
   function draw(t){
-    var r=c.getBoundingClientRect();ctx.clearRect(0,0,r.width,r.height);ctx.fillStyle='#F5F5F3';
+    ctx.clearRect(0,0,c.width,c.height);ctx.fillStyle='#F5F5F3';
     for(var i=0;i<stars.length;i++){var s=stars[i];ctx.globalAlpha=still?s.a:s.a*(.65+.35*Math.sin(t*.001*s.s+s.p));ctx.beginPath();ctx.arc(s.x,s.y,s.r,0,6.283);ctx.fill();}
     ctx.globalAlpha=1;
   }
   seed();window.addEventListener('resize',seed);
   if(!still){(function loop(t){draw(t);requestAnimationFrame(loop);})(0);}
-  var btn=document.getElementById('copy'),mail=document.getElementById('mail');
-  btn.addEventListener('click',function(){
-    var t=mail.textContent.trim();
-    var done=function(){btn.textContent='Copied';setTimeout(function(){btn.textContent='Copy';},2000);};
-    var fail=function(){var r=document.createRange();r.selectNodeContents(mail);var s=window.getSelection();s.removeAllRanges();s.addRange(r);btn.textContent='Selected';setTimeout(function(){btn.textContent='Copy';},2000);};
-    try{navigator.clipboard.writeText(t).then(done,fail);}catch(e){fail();}
-  });
+  /* draw the black hole when it scrolls into view; it is fully visible at rest without this */
+  var hole=document.querySelector('.hole');
+  if(!still && 'IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){hole.classList.add('play');io.disconnect();}});},{threshold:.35});
+    io.observe(hole);
+  }
 })();
 </script>
 </body></html>
